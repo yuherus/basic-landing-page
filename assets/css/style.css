@@ -1,0 +1,479 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+.clear{
+    clear: both;
+}
+
+.text-white{
+    color: #fff !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after{   
+    content: ""; 
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.mt-8 {
+    margin-top: 8px; !important
+}
+.mt-16 {
+    margin-top: 16px; !important
+}
+
+#main {
+
+}
+
+#header {
+    display: block;
+    height: 46.5px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav .subnav {
+    list-style-type: none;
+}
+#nav > li{
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: white;
+    text-transform: uppercase;
+}
+#nav li a {
+    text-decoration: none;
+    line-height: 46.5px;
+    padding: 0 24px;
+    display: inline-block;
+   
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav > li:hover > a{
+    color: #333;
+    background-color: #ccc;
+}
+
+#nav .subnav li:hover{
+    color: #333;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav .subnav a {
+    color: black;
+    padding-left: 16px;
+    line-height:  38px;
+    min-width: 160px;
+}
+#nav .nav-arrow-down {
+    font-size: 12px;
+}
+
+#header .search-button { 
+    float: right;
+}
+
+#header .search-button:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+    padding: 0 21px;
+}
+
+#slide {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 56.25% ;
+    background: url('/assets/image/club/champion2.jfif') top center / cover no-repeat;
+}
+
+#slide .text-content {
+    position: absolute;
+    color: black;
+    bottom: 47px;
+    width: 100%;
+    text-align: center;
+}
+
+#slide .text-heading {
+    font-size: 24px;
+}
+
+#slide .text-discription {
+    margin-top: 20px;
+    font-size: 15px;
+}
+#content { 
+}
+
+#content .content-section{
+    width :800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0 112px;
+}
+
+#content .section-heading{
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#content .section-subheading {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+}
+
+#content .about{
+    font-size: 15px;
+    margin-top: 25px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+#content .member-list{
+    margin-top: 48px;
+}
+
+#content .member-item{
+    float: left;
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+#content .member-img{
+    margin-top: 15px;
+    width: 260px;
+    border-radius: 4px;
+    border-style: solid;
+}
+
+.schedule-section {
+    background-color: black;
+}
+.ticket-list{
+    background-color: white;
+    margin-top: 40px;
+}
+
+.ticket-list li{
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+    list-style: none;
+}
+
+.ticket-list .sold-out{
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.ticket-list .quantity-ticket{
+    float: right;
+    width: 48px;
+    height: 24px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 10%;
+    line-height: 24px;
+    margin-top: -4px;
+}
+
+.matches-list{
+    margin-top: 32px;
+    margin-left: 233px;
+    margin-right: 233px;
+    padding-bottom: 111px;
+}
+
+
+.match-item{
+    float: left;
+    width: 33.33%;
+    background-color: #fff;
+    padding: 0 20px;
+    border: 1px solid #333;
+    border-radius: 5%;
+    
+}
+
+.match-img{
+    width: 100%;
+}
+
+.match-img:hover{
+    opacity: 0.6;
+}
+
+.match-body{
+    padding: 16px;
+    font-size: 15px;
+}
+
+.match-heading{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.match-time{
+    margin-top: 15px;
+    color: #757575;
+}
+
+.match-stadium{
+    margin-top: 15px;
+}
+
+.buy-btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 16px;
+}
+
+.buy-btn:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal{
+    position: fixed;
+    top : 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.modal-container{
+    background: #fff;
+    width: 900px;
+    min-height: 300px;
+    max-width: calc(100%-20px);
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+}
+
+.modal-header{
+    background: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+
+}
+
+.modal-heading-icon{
+    margin-right: 16px;
+}
+
+.modal-close{
+    position: absolute;
+    right: 0;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.modal-close:hover{
+    opacity: 1;
+}
+
+.modal-body{
+    padding: 16px;
+}
+
+.modal-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.modal-input{
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 28px;
+}
+
+#buy-ticket{
+    background: #009688;
+    width: 100%;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 16px;
+}
+
+#buy-ticket:hover{
+    opacity: 0.85;
+}
+
+.modal-footer{
+    padding: 16px;
+    text-align: right;
+    color: #2196f3;
+}
+
+@keyframes modalFadeIn {
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.contact-content{
+    margin-top: 48px;
+}
+
+.contact-infor{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-infor i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form{
+    font-size: 15px;
+}
+
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width : 100%;
+}
+
+.contact-form .form-submit-btn{
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 5%;
+    padding: 10px 16px;
+    float: right;
+    border: none;
+    cursor: pointer;
+}
+.contact-form .form-submit-btn:hover{
+    background: #ccc;
+    color: #000;
+    opacity: 0.9;
+}
+
+.stadium-section img {
+    width: 100%;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social{
+    font-size: 24px;
+}
+
+#footer .social a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+
+}
+
+#footer .social a:hover{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#footer .copyright{
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a{
+    color: rgba(0, 0, 0, 0.6);
+}
