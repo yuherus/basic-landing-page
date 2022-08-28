@@ -4,6 +4,7 @@
     <title>Real Madrid</title>
     <link rel="icon" href="./assets/image/logo_icon/real_logo_icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
 </head>
 
@@ -29,6 +30,9 @@
             </ul>
             <div class="search-button">
                 <i class="search-icon ti-search"></i>
+            </div>
+            <div id="mobile-menu" class="menu-button">
+                <i class="menu-icon ti-menu"></i>
             </div>
             
         </div>
@@ -241,5 +245,31 @@
         modalContainer.addEventListener('click', function(event) {
             event.stopPropagation()
         })
+      // đóng mở menu
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.onclick = function() {
+            var isClosed = header.clientHeight === 47;
+            if (isClosed) {
+                header.style.height = 'auto';
+            }
+              else{
+                header.style.height = '47px';
+              }
+        }
+     // tự động đóng menu khi click
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for (var i=0; i<menuItems.length; i++)
+          { 
+            var menuItem = menuItems[i];
+            menuItem.onclick = function(event) {
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if (!isParentMenu) {
+                header.style.height = '47px'; 
+              } else {
+                event.preventDefault();
+              }
+            }
+          }
     </script>
 </body>
