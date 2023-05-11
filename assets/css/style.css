@@ -304,15 +304,16 @@ html {
 .match-heading{
     font-size: 15px;
     font-weight: 600;
+    min-height: 36px;
 }
 
 .match-time{
-    margin-top: 15px;
     color: #757575;
+    min-height: 54px;
 }
 
 .match-stadium{
-    margin-top: 15px;
+    min-height: 36px;
 }
 
 .buy-btn{
